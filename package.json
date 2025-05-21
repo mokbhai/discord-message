@@ -1,0 +1,21 @@
+{
+  "name": "discord-message",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node src/index.ts",
+    "dev": "ts-node-dev --respawn src/index.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Discord webhook notification system for signup completion",
+  "devDependencies": {
+    "@types/node": "^22.15.21",
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
