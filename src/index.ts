@@ -12,6 +12,13 @@ async function main() {
 
     discordWebhook.sendSignupNotification(signupData);
     discordWebhook.sendSignupNotificationAlternative(signupData);
+
+    // OR Parallel Execution
+    // await Promise.all([
+    // Some other code
+    //   discordWebhook.sendSignupNotification(signupData),
+    //   discordWebhook.sendSignupNotificationAlternative(signupData),
+    // ]);
   } catch (error) {
     console.error("Failed to send signup notification:", error);
   }
