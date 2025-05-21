@@ -57,7 +57,7 @@ export class DiscordWebhook {
             ],
             timestamp: signupDate.toISOString(),
             footer: {
-              text: "Drcode.ai - Empowering Developers",
+              text: "Drcode.ai - Shipping features 2x faster!",
             },
           },
         ],
@@ -80,10 +80,10 @@ export class DiscordWebhook {
         embeds: [
           {
             title: "🌟 New Drcode.ai Developer",
-            description: "Welcome to the future of AI-powered development!",
+            description: "Welcome to the future of AI-powered Development!",
             color: 0x3498db, // Blue color
             thumbnail: {
-              url: "https://cdn.discordapp.com/emojis/1026533090627174460.png", // You can replace this with Drcode.ai logo
+              url: "https://www.drcode.ai/_next/image?url=%2Flogo.png&w=64&q=75", // You can replace this with Drcode.ai logo
             },
             fields: [
               {
@@ -99,9 +99,9 @@ export class DiscordWebhook {
             ],
             timestamp: signupDate.toISOString(),
             footer: {
-              text: "Drcode.ai - Building the Future of Development",
+              text: "Drcode.ai - Shipping features 2x faster!",
               icon_url:
-                "https://cdn.discordapp.com/emojis/1026533090627174460.png", // You can replace this with Drcode.ai icon
+                "https://www.drcode.ai/_next/image?url=%2Flogo.png&w=64&q=75", // You can replace this with Drcode.ai icon
             },
           },
         ],
