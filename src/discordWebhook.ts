@@ -6,6 +6,7 @@ dotenv.config();
 interface SignupData {
   email: string;
   timestamp: string;
+  name: string;
 }
 
 export class DiscordWebhook {
@@ -41,9 +42,14 @@ export class DiscordWebhook {
         embeds: [
           {
             title: "**🚀 New Drcode.ai Signup**",
-            description: "A new developer has joined Drcode.ai!",
+            description: `**${signupData.name.toUpperCase()}** has joined Drcode.ai!`,
             color: 0x00ff00, // Green color
             fields: [
+              {
+                name: "Name",
+                value: signupData.name,
+                inline: true,
+              },
               {
                 name: "Email",
                 value: signupData.email,
@@ -80,12 +86,17 @@ export class DiscordWebhook {
         embeds: [
           {
             title: "🌟 New Drcode.ai Developer",
-            description: "Welcome to the future of AI-powered Development!",
+            description: `Welcome **${signupData.name.toUpperCase()}** to the future of AI-powered Development!`,
             color: 0x3498db, // Blue color
             thumbnail: {
               url: "https://www.drcode.ai/_next/image?url=%2Flogo.png&w=64&q=75", // You can replace this with Drcode.ai logo
             },
             fields: [
+              {
+                name: "👤 Developer Name",
+                value: `\`${signupData.name}\``,
+                inline: true,
+              },
               {
                 name: "📧 Developer Email",
                 value: `\`${signupData.email}\``,

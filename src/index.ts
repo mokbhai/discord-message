@@ -6,7 +6,8 @@ async function main() {
 
     // Example signup data
     const signupData = {
-      email: "user@example.com",
+      name: "Test User",
+      email: "test@test.com",
       timestamp: new Date().toISOString(),
     };
 
