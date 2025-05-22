@@ -23,7 +23,7 @@ export class DiscordWebhook {
   }
 
   private formatDateTime(date: Date): string {
-    return new Intl.DateTimeFormat("en-US", {
+    return new Intl.DateTimeFormat("en-IN", {
       weekday: "long",
       year: "numeric",
       month: "long",
